@@ -8,7 +8,7 @@ export default class Clock extends React.Component {
     }
      
     render(){
-        setTimeout(() => this.setState( { time : new Date}) , 1000);
+        setTimeout(() => this.setState( { time : new Date().toLocaleTimeString()}) , 1000);
         return(            
             <div> {this.state.time.toString()} </div>
         );
